@@ -1,0 +1,12 @@
+.btn {
+	background: $btn-color--primary;
+	border: 1px solid $btn-border;
+	border-radius: 10px;
+	padding: .6em;
+	font-weight: 600;
+	color: $bg-color--secondary;
+	font-size: 14px;
+	&:hover {
+		background: $btn-color--secondary;
+	}
+}

@@ -1,0 +1,44 @@
+.container {
+	width: 85%;
+	margin: 0 auto;
+}
+
+.container-nav {
+	height: 60px;
+	@include flexy($dir: row,
+					$wrap: wrap,
+					$just: flex-start,
+					$align: center);
+	ul {
+		@include flexy($dir: row,
+					$wrap: wrap,
+					$just: flex-start,
+					$align: center);
+	}
+}
+
+.signup-section,
+.upload-section,
+.update-section {
+	form {
+		@include flexy($dir: column,
+					$wrap: wrap,
+					$just: space-between,
+					$align: center);
+	}
+}
+
+.container-btn {
+	width: 100%;
+	@include flexy($dir: row,
+					$wrap: wrap,
+					$just: space-between,
+					$align: center);
+}
+
+.container-card {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 175px;
+	grid-gap: 25px;
+}

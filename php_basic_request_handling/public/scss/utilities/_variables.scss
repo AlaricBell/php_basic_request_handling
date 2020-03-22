@@ -1,0 +1,32 @@
+// **********************************************************************
+//  --------------------------- BREAKPOINTS -----------------------------
+// **********************************************************************
+$brkpoint-sm: 576px;
+$brkpoint-md: 768px;
+$brkpoint-lg: 992px;
+
+// **********************************************************************
+//  ------------------------------ URLS ---------------------------------
+// **********************************************************************
+$font-url: "https://fonts.googleapis.com/css?family=Roboto&display=swap";
+
+// **********************************************************************
+//  --------------------------- FONT SIZES ------------------------------
+// **********************************************************************
+$font-size--small: 12px;
+$font-size--small-strong: 14px;
+$font-size--article: 16px;
+$font-size--base: 18px;
+$font-size--strong: 21px;
+$font-size--headline: 24px;
+// **********************************************************************
+//  ----------------------------- COLORS --------------------------------
+// **********************************************************************
+$bg-color--primary: #1B1F1F;
+$bg-color--secondary: lighten($bg-color--primary, 10%);
+$font-color--primary: #0E10F0;
+$font-color--secondary: lighten($font-color--primary, 17%);
+$border-color: lighten($font-color--primary, 25%);
+$btn-color--primary: #216CFF;
+$btn-color--secondary: lighten($btn-color--primary, 10%);
+$btn-border: darken($btn-color--primary, 15%);

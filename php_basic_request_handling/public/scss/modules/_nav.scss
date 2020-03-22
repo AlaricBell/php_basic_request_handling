@@ -1,0 +1,13 @@
+.nav-item {
+	color: $font-color--primary;
+	background: transparent;
+	border: none;
+	font-size: 18px;
+	font-weight: 600;
+	padding: .6em;
+
+	&:hover,
+	a:hover {
+		color: $font-color--secondary;
+	}
+}

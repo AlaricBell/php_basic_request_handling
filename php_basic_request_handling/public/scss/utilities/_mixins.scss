@@ -1,0 +1,45 @@
+// **********************************************************************
+//  --------------------------- BREAKPOINTS -----------------------------
+// **********************************************************************
+@mixin mq($break) {
+	@if($break == "small"){
+		@media (max-width: $brkpoint-sm){
+			@content;
+		}
+	}
+	@else if($break == "medium"){
+		@media (min-width: $brkpoint-sm + 1) and (max-width: $brkpoint-md){
+			@content;
+		}
+	}
+	@else if($break == "large"){
+		@media (min-width: $brkpoint-md + 1) and (max-width: $brkpoint-lg){
+			@content;
+		}
+	}
+	@else if($break == "ultra"){
+		@media (min-width: $brkpoint-lg + 1){
+			@content;
+		}
+	}
+	@else {
+		@error "[Breakpoint-mixin]: Invalid input value detected (#{$break})."
+	}
+};
+
+// **********************************************************************
+//  ----------------------------- FLEXBOX -------------------------------
+// **********************************************************************
+@mixin flexy($disp: flex,
+			 $dir: null,
+			 $wrap: null,
+			 $just: null,
+			 $align: null) {
+	display: $disp;
+	flex-direction: $dir;
+	flex-wrap: $wrap;
+	justify-content: $just;
+	align-items: $align;
+	@content;
+}
+

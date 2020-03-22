@@ -1,0 +1,74 @@
+@if(variable-exists($font-url)) {
+	@import url($font-url);
+}
+
+* {
+	box-sizing: border-box;
+}
+footer {
+	width: 100vw;
+	height: 50px;
+	background: $bg-color--secondary;
+	position: absolute;
+	bottom: 0;
+}
+
+body {
+	background-color: $bg-color--primary;
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $font-color--primary;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+li,
+span {
+	color: $font-color--primary;
+}
+
+ul {
+	list-style: none;
+}
+
+nav {
+	height: 80px;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	@include flexy($dir: row,
+					$wrap: wrap,
+					$just: space-between,
+					$align: center);
+}
+
+input {
+	height: em(42px);
+	color: $font-color--secondary;
+	border: none;
+	padding: 3px;
+	margin: .4em;
+	font-size: 18px;
+
+	&[type="text"],
+	&[type="password"],
+	&[type="email"] {
+		background-color: $bg-color--secondary;
+	}
+	
+	&:hover {
+		border-bottom: 1px solid $border-color;
+	}
+}
+
+.warning {
+	color: red;
+	font-weight: 500;
+}

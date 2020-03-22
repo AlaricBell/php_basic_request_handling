@@ -1,0 +1,24 @@
+.card {
+	display: grid;
+	grid-template-columns: 136px auto;
+	grid-template-rows: 130px 45px;
+	width: 400px;
+	margin: 0 auto;
+
+	.avatar {
+		grid-area: avatar;
+	}
+	.description {
+		grid-area: desc;
+		p:last-of-type {
+			margin: 0;
+		}
+	}
+	.container-btn {
+		grid-area: btns;
+	}
+
+	grid-template-areas:
+	"avatar desc"
+	"btns btns";
+}
